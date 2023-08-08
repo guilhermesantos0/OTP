@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    background: linear-gradient(45deg, rgb(10, 27, 73), rgb(1, 50, 65));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+img{
+    width: 25vh;
+    height: 25vh;
+}
+
+.wrapper{
+    width: 25vw;
+    height: 20vh;
+    background: rgba(61, 61, 61, 0.8);
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    margin-top: -2vh;
+}
+
+.spaces{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    list-style: none;
+}
+
+.spaces input{
+    width: 4vw;
+    height: 9vh;
+
+    background: rgba(255, 255, 255, 0.055);
+    border: 2px dashed gray;
+    outline: none;
+    border-radius: 8px;
+
+    font-size: xx-large;
+
+    text-align: center;
+
+    color: aliceblue;
+}
+
+.spaces input.placed{
+    border: 2px solid rgb(12, 118, 189);   
+}
+
+.send{
+    width: 15vw;
+    height: 7vh;
+
+    border-radius: 5px;
+    border: 2px solid rgb(3, 92, 194);
+
+    background: rgb(8, 133, 235);
+
+    color: aliceblue;
+
+    cursor: pointer;
+
+    font-size: x-large;
+}
+
+@media screen and (max-width: 767px) {
+    .wrapper{
+        width: 80vw;
+    }
+
+    .spaces input{
+        width: 15vw;
+    }
+
+    .send{
+        width: 30vw;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .wrapper{
+        width: 70vw;
+        height: 25vh;
+    }
+
+    .spaces input{
+        width: 12vw;
+    }
+
+    .send{
+        width: 30vw;
+    }
+}
